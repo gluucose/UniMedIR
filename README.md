@@ -1,4 +1,4 @@
-# All-In-One Medical Image Restoration via Task-Adaptive Routing (AMIR)
+# All-In-One Medical Image Restoration via Text-Guided Prompting and Dual-Domain Modeling (UniMedIR)
 
 PyTorch implementation for "All-In-One Medical Image Restoration via Text-Guided Prompting and Dual-Domain Modeling", Information Fusion 2026. [[paper]](https://www.sciencedirect.com/science/article/abs/pii/S1566253526004367)
 
