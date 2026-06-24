@@ -1,0 +1,107 @@
+{
+  "MRI": {
+    "standard_prompt": "This is a brain MRI scan that has been downsampled by a factor of 4. The task is to perform super-resolution to approximate the quality of a standard-resolution MRI.",
+    "augmented_prompts": [
+      "This brain MRI image has been reduced in resolution by a factor of 4. Super-resolution is required to recover the original quality.",
+      "The MRI scan of the brain was downsampled 4×. Your task is to enhance it to resemble a standard-resolution scan.",
+      "A low-resolution brain MRI is provided, degraded by 4× downsampling. Reconstruct the high-resolution counterpart.",
+      "This scan represents a brain MRI downsampled by 4×. Perform super-resolution to restore typical image detail.",
+      "The image is a degraded brain MRI with 4× reduced resolution. Recover the lost fidelity using super-resolution techniques.",
+      "A 4× downsampled version of a brain MRI is given. The goal is to reconstruct its high-resolution form.",
+      "Downsampled brain MRI by a factor of 4. Your task is to reconstruct high-quality MRI details.",
+      "This is a low-res brain MRI, compressed by 4×. Apply super-resolution to restore its clarity.",
+      "Brain MRI degraded due to 4× downsampling. Enhance it to match standard clinical resolution.",
+      "Your goal is to upscale this brain MRI (4× downsampled) to simulate a high-resolution scan."
+    ]
+  },
+  "CT": {
+    "standard_prompt": "This is a low-dose abdominal CT scan acquired with only 25% of the normal radiation dose. The task is to denoise it in order to recover a high-quality normal-dose CT image.",
+    "augmented_prompts": [
+      "This abdominal CT was acquired at 25% dose. The task is to suppress noise and recover normal-dose image quality.",
+      "A low-dose abdominal CT (1/4 of standard dose) is provided. Restore it to normal quality.",
+      "The scan represents a 25%-dose abdominal CT. Denoise it to resemble a full-dose version.",
+      "You are given a noisy abdominal CT due to low radiation (25% dose). Enhance it to match standard-dose CT.",
+      "This is a dose-reduced abdominal CT. Your task is to denoise and approximate a normal-dose scan.",
+      "The abdominal CT was captured with limited radiation (25% of standard). Denoise to restore image clarity.",
+      "The CT image was acquired using 25% of the typical dose. Improve its quality via denoising.",
+      "Reduce the artifacts and noise in this low-dose abdominal CT to simulate a full-dose scan.",
+      "Denoise this abdominal CT image captured under low radiation exposure (25%) to yield normal quality.",
+      "This scan is degraded by low-dose acquisition. Recover standard image quality through denoising."
+    ]
+  },
+  "CT2": {
+    "standard_prompt": "This is a thoracic or abdominal CT scan affected by metal-induced artifacts. The task is to perform metal artifact reduction to reconstruct a high-quality artifact-free CT scan.",
+    "augmented_prompts": [
+      "A thoracic/abdominal CT scan containing metal artifacts is given. Remove artifacts to restore clarity.",
+      "This scan includes metal-induced distortions. Apply artifact reduction to obtain a clean CT.",
+      "CT of chest or abdomen affected by metal artifacts. Reconstruct a clean version.",
+      "This is a CT scan degraded by metallic implants. Your task is to suppress artifacts and recover detail.",
+      "Eliminate metal-related distortions from this thoracic or abdominal CT scan to simulate artifact-free imaging.",
+      "Metal-induced streaks are present in this CT image. Perform artifact correction to reconstruct the anatomy.",
+      "Correct the metallic artifacts in this abdominal/thoracic CT to recover a clear diagnostic image.",
+      "Your goal is to clean metal-induced noise from this CT image and restore anatomical structures.",
+      "Remove the metal artifacts from this CT scan to match a standard artifact-free scan.",
+      "This scan suffers from strong artifacts due to implanted metal. Perform MAR to generate a high-quality CT."
+    ]
+  },
+  "CT3": {
+    "standard_prompt": "This is a sparse-view CT scan of the thorax or abdomen, reconstructed from 1/8 of the full projection views. The task is to perform sparse-view reconstruction to simulate a high-quality full-view CT scan.",
+    "augmented_prompts": [
+      "This CT scan uses only 1/8 of normal projection views. Reconstruct it as if acquired in full view.",
+      "Sparse-view CT (thorax/abdomen) with 12.5% projections. Reconstruct full-view quality image.",
+      "The scan contains limited-angle CT data (1/8 views). Perform reconstruction to restore full fidelity.",
+      "Due to sparse sampling, this CT has degraded quality. Recover it as a full-projection CT.",
+      "This is a thoracic or abdominal CT using sparse 1/8 views. Simulate the full-view image.",
+      "Reconstruct this sparsely sampled CT (12.5% views) to achieve standard diagnostic quality.",
+      "A sparse-view CT with only 1/8 views is presented. Restore it to full-view image quality.",
+      "This is a heavily undersampled CT scan. Your task is to reconstruct the full-view equivalent.",
+      "CT data acquired with 1/8 projections. Reconstruct it as if captured with complete angular sampling.",
+      "Enhance this sparse CT image (1/8 projection) to closely match the full-view version."
+    ]
+  },
+  "PET": {
+    "standard_prompt": "This is a low-dose whole-body PET scan acquired with a dose reduction factor of 12. The task is to denoise it to approximate the quality of a normal-dose PET scan.",
+    "augmented_prompts": [
+      "This PET scan was performed with 1/12 of the normal tracer dose. Denoise to simulate full-dose quality.",
+      "Whole-body PET with DRF=12. Your task is to reduce noise and recover normal-dose image fidelity.",
+      "The PET scan has a dose reduction factor of 12. Enhance it to match standard-dose output.",
+      "Suppress noise in this PET image acquired with DRF 12 to approximate high-quality imaging.",
+      "PET scan with 12× dose reduction. Denoise to generate a realistic normal-dose appearance.",
+      "This is a whole-body PET degraded due to DRF=12. Denoise and improve metabolic image detail.",
+      "You are given a noisy low-dose PET (DRF 12). Restore standard signal-to-noise characteristics.",
+      "Recover full-dose quality from this PET scan acquired under 12× reduced tracer activity.",
+      "This low-dose PET has DRF 12. The objective is to suppress noise and restore diagnostic value.",
+      "Enhance this whole-body PET image obtained under heavy dose reduction (DRF=12)."
+    ]
+  },
+  "PET2": {
+    "standard_prompt": "This is a low-dose whole-body PET scan acquired with a dose reduction factor of 50. The task is to denoise it to simulate a standard full-dose PET scan with high image quality.",
+    "augmented_prompts": [
+      "PET scan acquired with DRF 50 (2% dose). Denoise to recover standard image quality.",
+      "An extremely low-dose PET scan (DRF=50) is given. Suppress noise and simulate a high-quality result.",
+      "The PET image contains heavy noise due to DRF=50. Your task is to reconstruct a clear version.",
+      "This is an ultra-low-dose PET scan. Enhance it to approximate the full-dose equivalent.",
+      "PET data acquired with 50× dose reduction. Denoise to recover meaningful metabolic information.",
+      "Severe underdosing (DRF=50) affects this scan. Reconstruct it to resemble full-dose PET.",
+      "Denoise this heavily degraded PET image acquired at DRF=50.",
+      "Enhance this whole-body PET scan obtained with minimal tracer activity (DRF=50).",
+      "Due to extreme dose reduction, this PET scan is noisy. Recover standard PET quality.",
+      "PET image obtained with DRF=50. Your goal is to produce a high-quality version matching full-dose standards."
+    ]
+  },
+  "WSI": {
+    "standard_prompt": "This is a low-quality WSI patch from lung adenocarcinoma, downsampled by a factor of 4. The task is to perform super-resolution to approximate the quality of a high-resolution WSI patch.",
+    "augmented_prompts": [
+      "This LUAD WSI patch is downsampled 4×. Recover high-res histological detail using super-resolution.",
+      "A lung adenocarcinoma WSI patch has been degraded by 4× downsampling. Reconstruct the full-resolution version.",
+      "Enhance this low-res pathology patch (LUAD, downsampled ×4) to match diagnostic resolution.",
+      "This patch from a lung tumor slide is 4× downsampled. Perform super-resolution to recover tissue structure.",
+      "LUAD histopathology patch with reduced resolution (×4). Restore the original resolution.",
+      "The input is a WSI patch downsampled by a factor of 4. Apply SR to regain fine-grained texture.",
+      "This is a compressed lung cancer WSI patch. The task is to restore its native resolution.",
+      "4× downsampled LUAD slide patch. Your goal is to reconstruct its high-resolution counterpart.",
+      "This patch was extracted from a LUAD slide and downsampled. Reconstruct via SR to visualize cellular details.",
+      "Perform super-resolution on this low-resolution LUAD patch to simulate original quality."
+    ]
+  }
+}
